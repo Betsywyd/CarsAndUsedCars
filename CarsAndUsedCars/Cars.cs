@@ -40,7 +40,8 @@ namespace CarsAndUsedCars
      
         public static void Remove(int x)
         {
-            CarsList.RemoveAt(x);
+            CarsList.RemoveAt(x-1);
+
             for(int i=0;i<CarsList.Count;i++)
             {
                 Console.WriteLine((i + 1) + ". " + CarsList[i]);
